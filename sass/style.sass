@@ -154,6 +154,8 @@ nav
 	&_white 
 		background-color: #fff
 		color: #000
+	&_min
+		width: 76px
 
 .title
   position: relative
@@ -169,11 +171,15 @@ nav
 	  color: #fff
 
 .subtitle
+	position: relative
 	margin-top: 19px
 	color: #222222
 	font-size: 17px
 	font-weight: 400
 	text-align: center
+	z-index: 2
+	&_white
+	  color: #fff
 
 .reasons .reasons_block
   display: flex
@@ -343,3 +349,23 @@ nav
 			li 
 				&:before
 					background: url('../images/check_red.svg') center (center / cover) no-repeat
+
+.world
+	position: relative
+	min-height: 720px
+	padding: 50px 0 
+	background: url(../images/map.jpg)
+	&_link 
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		bottom: 50px
+		text-align: center
+		font-size: 15px
+		font-weight: 400
+		line-height: 68px
+		text-transform: uppercase
+		color: #1fbad6
+		&:hover 
+			text-decoration: none
+			color: #fff

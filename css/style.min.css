@@ -184,6 +184,10 @@ nav {
   color: #000;
 }
 
+.label_min {
+  width: 76px;
+}
+
 .title {
   position: relative;
   margin-bottom: 0;
@@ -201,11 +205,17 @@ nav {
 }
 
 .subtitle {
+  position: relative;
   margin-top: 19px;
   color: #222222;
   font-size: 17px;
   font-weight: 400;
   text-align: center;
+  z-index: 2;
+}
+
+.subtitle_white {
+  color: #fff;
 }
 
 .reasons .reasons_block {
@@ -448,4 +458,30 @@ nav {
 
 .require .warning .require_list li:before {
   background: url("../images/check_red.svg") center center/cover no-repeat;
+}
+
+.world {
+  position: relative;
+  min-height: 720px;
+  padding: 50px 0;
+  background: url(../images/map.jpg);
+}
+
+.world_link {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 50px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 68px;
+  text-transform: uppercase;
+  color: #1fbad6;
+}
+
+.world_link:hover {
+  text-decoration: none;
+  color: #fff;
 }
